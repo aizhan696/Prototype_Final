@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - RemoteMed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 500px;
+        }
+        .form-control.is-valid, .form-control.is-invalid {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2>Register</h2>
+        <form id="registerForm" novalidate>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required minlength="6">
+                <div class="invalid-feedback">
+                    Password must be at least 6 characters long.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+                <div class="invalid-feedback">
+                    Passwords do not match.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            // Input elements
+            const email = document.getElementById("email");
+            const password = document.getElementById("password");
+            const confirmPassword = document.getElementById("confirmPassword");
+
+            // Basic validation checks
+            let valid = true;
+
+            // Email validation
+            if (!email.checkValidity()) {
+                email.classList.add("is-invalid");
+                valid = false;
+            } else {
+                email.classList.remove("is-invalid");
+                email.classList.add("is-valid");
+            }
+
+            // Password validation (length)
+            if (password.value.length < 6) {
+                password.classList.add("is-invalid");
+                valid = false;
+            } else {
+                password.classList.remove("is-invalid");
+                password.classList.add("is-valid");
+            }
+
+            // Confirm password validation
+            if (password.value !== confirmPassword.value) {
+                confirmPassword.classList.add("is-invalid");
+                valid = false;
+            } else {
+                confirmPassword.classList.remove("is-invalid");
+                confirmPassword.classList.add("is-valid");
+            }
+
+            // If valid, store data and show success
+            if (valid) {
+                localStorage.setItem("email", email.value);
+                localStorage.setItem("password", password.value);
+                alert("Registration successful!");
+                window.location.href = "login.html";  // Redirect to login page
+            }
+        });
+
+        // Real-time validation feedback for each field
+        document.getElementById("email").addEventListener("input", function() {
+            this.classList.remove("is-valid", "is-invalid");
+        });
+
+        document.getElementById("password").addEventListener("input", function() {
+            this.classList.remove("is-valid", "is-invalid");
+        });
+
+        document.getElementById("confirmPassword").addEventListener("input", function() {
+            this.classList.remove("is-valid", "is-invalid");
+        });
+    </script>
+</body>
+</html>

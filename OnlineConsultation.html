@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Consultation - RemoteMed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #2c7873;
+        }
+        .hero {
+            background: #2c7873;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .section-content {
+            padding: 3rem 0;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c7873;
+            margin-bottom: 1.5rem;
+        }
+        .specialty-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            margin-bottom: 1.5rem;
+        }
+        .specialty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">RemoteMed</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./AboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="./LogIn.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="./SignUp.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Online Consultation</h1>
+            <p>Connect with qualified doctors virtually from the comfort of your home.</p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-content text-center">
+        <div class="container">
+            <h2 class="section-title">How Online Consultation Works</h2>
+            <p>Get started with an online consultation in three easy steps:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <span class="icon">📝</span>
+                        <h5>Choose a Specialty</h5>
+                        <p>Select the type of medical consultation you need.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <span class="icon">📅</span>
+                        <h5>Select a Date & Time</h5>
+                        <p>Pick a convenient time for your virtual appointment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <span class="icon">💻</span>
+                        <h5>Start the Consultation</h5>
+                        <p>Join the consultation from home on your computer or mobile device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Specialties Section -->
+    <section class="section-content">
+        <div class="container">
+            <h2 class="text-center section-title">Available Specialties for Online Consultation</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <h5>General Medicine</h5>
+                        <p>Get medical advice and treatment from general physicians.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <h5>Dermatology</h5>
+                        <p>Consult with dermatologists about skin conditions and treatments.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <h5>Cardiology</h5>
+                        <p>Receive expert advice from cardiologists on heart-related issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <h5>Pediatrics</h5>
+                        <p>Get medical advice for children’s health from pediatricians.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <h5>Psychiatry</h5>
+                        <p>Access mental health support and counseling.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <h5>Gynecology</h5>
+                        <p>Consult with specialists on women's health issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section-content text-center bg-light">
+        <div class="container">
+            <h2 class="section-title">Need an offline appointment?</h2>
+            <p>Select your specialty, date, and time to book an appointment to the hospitals.</p>
+            <a href="BookAppointment.html" class="btn btn-primary mt-3">make an appointment</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 RemoteMed | All rights reserved</p>
+        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Telegram</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

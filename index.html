@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemoteMed - Convenient Hospital Appointments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #2c7873;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #2c7873, #25665e);
+            color: #fff;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .btn-primary, .btn-outline-primary {
+            border-radius: 30px;
+            padding: 0.6rem 1.2rem;
+            transition: all 0.3s;
+        }
+        .btn-outline-primary {
+            color: #2c7873;
+            border-color: #2c7873;
+        }
+        .btn-outline-primary:hover {
+            background-color: #2c7873;
+            color: #fff;
+        }
+        .section-content {
+            padding: 4rem 0;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c7873;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        /* Features */
+        .feature-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* Icons */
+        .icon {
+            font-size: 2.5rem;
+            color: #2c7873;
+            margin-bottom: 1rem;
+        }
+        /* Language Selector */
+        .language-selector a {
+            margin-left: 15px;
+            color: #2c7873;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .language-selector a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">RemoteMed</a>
+            <div class="language-selector d-inline-flex ms-3">
+                <a href="./Kazakh.html">Қазақша</a>
+                <a href="./Russian.html">Русский</a>
+                <a href="./index.html">English</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./AboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="./LogIn.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="./SignUp.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Convenient Hospital Appointment Solution</h1>
+            <p>Easily book appointments with trusted medical professionals at hospitals across Kazakhstan.</p>
+            <a href="./BookAppointment.html" class="btn btn-light mt-3">Book an Appointment</a>
+        </div>
+        
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-content text-center">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="row">
+                <!-- <div class="col-md-3">
+                    <a href="./SignUp.html" style="text-decoration: none; color: inherit;">
+                    <div class="feature-box">
+                        <span class="icon">📝</span>
+                        <h5>Create an Account</h5>
+                        <p>Sign up and access hospital booking services.</p>
+                    </div>
+                </a>
+                </div> -->
+                <div class="col-md-3">
+                    <a href="./ChooseService.html" style="text-decoration: none; color: inherit;">
+                    <div class="feature-box">
+                        <span class="icon">📅</span>
+                        <h5>Choose a Service</h5>
+                        <p>Select the type of medical service you need.</p>
+                    </div>
+                </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./Doctors.html" style="text-decoration: none; color: inherit;">
+                        <div class="feature-box">
+                            <span class="icon">👨‍⚕️</span>
+                            <h5>Find Doctors</h5>
+                            <p>Find a suitable time with your preferred doctor.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-3">
+                    <a href="./Hospitals.html" style="text-decoration: none; color: inherit;">
+                    <div class="feature-box">
+                        <span class="icon">🏥</span>
+                        <h5>Visit the Hospital</h5>
+                        <p>Arrive at the hospital for your scheduled appointment.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="./OnlineConsultation.html" style="text-decoration: none; color: inherit;">
+                        <div class="feature-box">
+                            <span class="icon">💻</span>
+                            <h5>Online Consultation</h5>
+                            <p>Connect with doctors virtually from the comfort of your home.</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Benefits Section -->
+    <section class="section-content text-center bg-light">
+        <div class="container">
+            <h2 class="section-title">Why Choose RemoteMed?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <span class="icon">🕒</span>
+                        <h5>Convenience</h5>
+                        <p>Book appointments at hospitals without the hassle of long waits.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <span class="icon">🏆</span>
+                        <h5>Trusted Professionals</h5>
+                        <p>Consult with verified medical experts at leading hospitals.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <span class="icon">🔒</span>
+                        <h5>Privacy & Security</h5>
+                        <p>Your information is securely handled, protecting your privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="section-content text-center">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p>Our dedicated team works to make hospital appointments seamless and accessible.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h5>Zhanel Z.</h5>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h5>Aizhan K.</h5>
+                        <p>Technical Lead</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h5>Zhanet B.</h5>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 RemoteMed | All rights reserved</p>
+        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Telegram</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+</body>
+</html>
